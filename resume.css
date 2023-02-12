@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background: linear-gradient(to right,#3525af ,#9153c9);
+}
+
+.resume{
+    width: 800px;
+    background: #fff;
+    margin: 25px auto;
+    display: flex;
+}
+
+.left
+{
+    background:#292b2f;
+    width: 250px;
+    padding: 0 20px;
+}
+
+.right{
+    width: calc(100% - 200px);
+}
+
+.left .img{
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.left .img img{
+    width: 200px;
+    border-radius: 30px;
+}
+
+.pb{
+    padding-bottom: 20px;
+
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #3525af;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+
+}
+
+
+.title::before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: #3525af;
+}
+
+.left .icon{
+    font-size: 20px;
+    color: #9153c9;
+
+}
+
+.left .text{
+    font-size: 13px;
+    color: #9153c9;
+    text-transform: uppercase;
+}
+
+.contact .li_wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+
+}
+
+.contact .li_wrap .text{
+    width: calc(100% - 50px);
+    word-break: word-break;
+    color: #fff;
+}
+
+
+.skill ul,
+.hobbies ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill .li_wrap,
+.hobbies .li_wrap{
+    width:60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill .li_wrap
+{
+    background: #fff;
+}
+
+.skill .li_wrap .text,
+.hobbies .li_wrap .text{
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.hobbies .li_wrap{
+    border: 2px solid #fff;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+    color:#fff;
+}
+
+.hobbies .li_wrap:hover{
+    background: #fff;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+    color:#9153c9;
+}
+
+.header{
+    background: #292b2f;
+    padding: 10px 30px;
+    color: #fff;
+    height: 100px;
+}
+
+.header .name{
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3525af;
+}
+
+.header .role{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.header .objective{
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.title1{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    color: #3525af;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+    right: 20px;
+}
+
+.title1::before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 50px;
+    height: 3px;
+    background: #3525af;
+}
+
+.right .edu .table{
+    position: relative;
+    border-collapse: collapse;
+    width: 480px;
+    height: 210px;
+    display: flex;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    margin: 25px;
+}
+
+.right .edu .table tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.right .edu .table th, .right .edu .table td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.right .Education{
+    margin-top: 30px;
+    border-radius: 2px solid;
+}
+
+.right .Education,
+.right .declare,
+.right .certification,
+.right .achievement{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    color: #3525af;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+    right: 20px;
+}
+
+.right .Education::before,
+.right .declare::before,
+.right .certification::before,
+.right .achievement::before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 50px;
+    height: 3px;
+    background: #3525af;
+}
+
+.ach .li_wrap , .cert .li_wrap, .dec .li_wrap, .objective{
+    padding: 10px;
+}
+
+.ach .li_wrap .text, .cert .li_wrap .text, .dec .li_wrap .text, .objective{
+    margin-top: 5px;
+    font-size: 18px;
+}
