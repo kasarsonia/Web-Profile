@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 }
 
 body{
-    background: linear-gradient(to right,#3525af ,#9153c9);
+    background: linear-gradient(to right,#5ae0f8 ,#b8fd68);
 }
 
 .resume{
@@ -36,7 +38,7 @@ body{
 
 .left .img img{
     width: 200px;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 .pb{
@@ -130,6 +132,17 @@ body{
     background: #fff;
 }
 
+.skill .li_wrap:hover .text,
+.skill .li_wrap:hover .icon
+{
+    background: black;
+}
+
+.skill .li_wrap:hover 
+{
+    background: #9153c9;
+}
+
 .skill .li_wrap .text,
 .hobbies .li_wrap .text{
     margin-top: 5px;
@@ -152,6 +165,10 @@ body{
 .hobbies .li_wrap:hover .icon,
 .hobbies .li_wrap:hover .text{
     color:#9153c9;
+}
+
+.left .title:hover{
+    color: red;
 }
 
 .header{
@@ -178,6 +195,8 @@ body{
     line-height: 26px;
 }
 
+
+
 .title1{
     font-size: 22px;
     font-weight: 700;
@@ -201,11 +220,12 @@ body{
     background: #3525af;
 }
 
+
 .right .edu .table{
     position: relative;
     border-collapse: collapse;
     width: 480px;
-    height: 210px;
+    height: 220px;
     display: flex;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -217,13 +237,20 @@ body{
     cursor: pointer;
 }
 
+.right .edu .table th{
+    color: rgb(250, 14, 132);
+}
+
 .right .edu .table th, .right .edu .table td{
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
-.right .Education{
+.right .Education,
+.right .declare,
+.right .certification,
+.right .achievement{
     margin-top: 30px;
     border-radius: 2px solid;
 }
@@ -244,6 +271,14 @@ body{
     right: 20px;
 }
 
+.right .title1:hover,
+.right .Education:hover,
+.right .declare:hover,
+.right .certification:hover,
+.right .achievement:hover{
+    color: red;
+}
+
 .right .Education::before,
 .right .declare::before,
 .right .certification::before,
@@ -261,7 +296,41 @@ body{
     padding: 10px;
 }
 
-.ach .li_wrap .text, .cert .li_wrap .text, .dec .li_wrap .text, .objective{
+.ach .li_wrap .text, .cert .li_wrap .text, .dec .li_wrap .text, .objective,.dec .li_wrap .text1,.dec .li_wrap .text2{
     margin-top: 5px;
     font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.ach .li_wrap .text, .cert .li_wrap .text{
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.dec .li_wrap .text2{
+    margin-top: 30px;
+}
+
+.dec .li_wrap .text1{
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+    right: 40px;
+}
+
+
+@media screen and (max-width: 1068px) 
+{
+    .wrapper{
+        display: table;
+    }
+
+    .resume .left{
+        width: 100%;
+    }
+    .resume .right{
+        width: 100%;
+    }
+
 }

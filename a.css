@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ddd;
+        align-items: center;
+        justify-content: center;
+        background: url(w2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+        width: 50%;
+        height: 50%;
+        padding: 20px 20px;
+    }
+
+    .box{
+        flex: 30%;
+        display: table;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        background:rgba(236, 250, 48, 0.904);
+        color: #fff;
+        padding: 30px 30px;
+        border-radius: 20px;
+        
+    }
+
+    .box img{
+        border-radius: 50%;
+        border: 2px solid #fff;
+        height: 250px;
+        width: 250px;
+    }
+    .box .table tr, .box .table td, .box .table th{
+        color: black;
+    }
+
+    .box .left , .box .right{
+        color: black;
+    }
+
+    .box ul{
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+    }
+
+    .box ul li h2{
+        list-style: none;
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Poppins';
+    }
+
+    .box ul li h5{
+        list-style: none;
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Poppins';
+        color: sienna;
+    }
+
+    .box ul li{
+        list-style: none;
+        margin-top: 30px;
+        font-weight: 500;
+        font-family: 'Poppins';
+    }
+
+    .box ul li .a{
+        display: block;
+        padding: 10px;
+        margin: 1.5rem 0;
+        background: grey;
+        color: #fff;
+        font-size: 2rem;
+        border-radius: 5rem;
+        font-family: 'Poppins';
+        text-decoration: none;
+    }
+
+    .box ul li .a:hover{
+        background: red;
+    }
+
+    .box ul li i{
+        cursor: pointer;
+        margin: 10px;
+        font-size: 60px;
+    }
+
+    .box ul li i:hover{
+        opacity: 1;
+    }
+
+    .box .fa-linkedin-square:hover, .box .fa-instagram:hover, .box .fa-id-card-o:hover{
+        color: #04cdff;
+        
+    }
+
+    
+
+    @media screen and (max-width: 1068px) 
+    {
+        .container{
+            display: table;
+        }
+
+        .box{
+            width: 100%;
+        }
+
+    }
